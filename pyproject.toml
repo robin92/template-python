@@ -13,9 +13,14 @@ python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"
+black = "^22.3.0"
 pytest-cov = "^3.0"
 pytest-flake8 = "^1.1"
 pytest-mypy = "~0.9.1"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
 
 [tool.pytest.ini_options]
 addopts = "--cov=app --flake8 --mypy"
